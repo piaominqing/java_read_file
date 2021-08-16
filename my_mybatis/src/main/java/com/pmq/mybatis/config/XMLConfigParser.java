@@ -1,4 +1,4 @@
-package com.pmq.read_file.xml;
+package com.pmq.mybatis.config;
 
 import java.io.InputStream;
 import java.util.List;
@@ -8,7 +8,7 @@ import org.apache.commons.dbcp.BasicDataSource;
 import org.dom4j.Document;
 import org.dom4j.Element;
 
-import com.pmq.read_file.utils.DocumentUtils;
+import com.pmq.mybatis.utils.DocumentUtils;
 
 /**
  * 解析mybatis 全局配置文件

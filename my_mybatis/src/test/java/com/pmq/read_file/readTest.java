@@ -5,10 +5,10 @@ import java.io.InputStream;
 import org.dom4j.Document;
 import org.junit.Test;
 
-import com.pmq.read_file.utils.DocumentUtils;
-import com.pmq.read_file.xml.Configuration;
-import com.pmq.read_file.xml.Resources;
-import com.pmq.read_file.xml.XMLConfigParser;
+import com.pmq.mybatis.config.Configuration;
+import com.pmq.mybatis.config.Resources;
+import com.pmq.mybatis.config.XMLConfigParser;
+import com.pmq.mybatis.utils.DocumentUtils;
 
 public class readTest {
 	/**

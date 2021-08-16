@@ -1,4 +1,4 @@
-package com.pmq.read_file.utils;
+package com.pmq.mybatis.utils;
 
 import java.io.InputStream;
 

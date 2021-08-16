@@ -1,4 +1,4 @@
-package com.pmq.read_file.xml;
+package com.pmq.mybatis.config;
 
 import org.dom4j.Element;
 
