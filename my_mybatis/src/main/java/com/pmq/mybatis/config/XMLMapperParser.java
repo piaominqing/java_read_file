@@ -14,10 +14,13 @@ public class XMLMapperParser {
 	
 	public void parse(Element rootElement) {
 		String namespace = rootElement.attributeValue("namespace");
+		// mapper标签下会包含一些sql片段标签， resultMap标签等,这些标签直接解析处理，而statement相关的标签需要单独处理
+		// todo 使用XPath语法来进行通配
 		List<Element> elements = rootElement.elements("select");
 		for(Element selectElement: elements) {
-			XMLScriptParser scriptParser = new XMLScriptParser(configuration);
-			scriptParser.parseScirpt(selectElement);
+			// select update delete insert 都对应一个statement
+			XMLStatementParser statementParser = new XMLStatementParser(configuration);
+			statementParser.parseStatement(selectElement, namespace);
 		}
 		
 	}

@@ -9,6 +9,7 @@ import org.dom4j.Document;
 import org.dom4j.Element;
 
 import com.pmq.mybatis.utils.DocumentUtils;
+import com.pmq.mybatis.utils.Resources;
 
 /**
  * 解析mybatis 全局配置文件
